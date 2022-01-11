@@ -1,7 +1,7 @@
 const Telegraf = require('telegraf');
 const startAction = require('./actions/start')
 
-const bot = new Telegraf(process.env.TELEGRAM_BOT_TOKEN);
+const bot = new Telegraf(process.env.BOT_TOKEN);
 
 bot.start(ctx => {
   return startAction(ctx)
